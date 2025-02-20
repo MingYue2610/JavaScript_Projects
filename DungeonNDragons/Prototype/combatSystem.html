@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combat</title>
+    <link rel="stylesheet" href="main.css">
+    <button id="music-toggle-btn-combat">Toggle Music</button>
+    <audio id="background-music" loop>
+        <source src="sounds/Combat_BGM.wav" type="audio/mpeg">
+    </audio>
+</head>
+<body>
+        <h1>Battle the Dungeon Boss!</h1>
+        <div id="character-info">
+            <p id="character-name"></p>
+            <p id="character-class"></p>
+            <div>
+                <video id="class-video" autoplay muted loop>
+                <source id="class-video-source" src="videos/" type="video/mp4">
+                </video>
+            </div>
+            <div id="roll-dice-container">
+                <button id="roll-dice-button">Roll Dice</button>
+                <p id="dice-result"></p>
+            </div>
+        </div>
+        <div id="combat-area">
+            <div id="player-health">Player Health: 100</div>
+            <div id="boss-health">Boss Health: 100</div>
+            <div id="combat-log"></div>
+            <div id="abilities"></div>
+            <div id= "boss-background"></div>
+            <button id="attack" style="display:none;">Attack</button>
+            <button id="restart" style="display:none;">Restart Battle</button>
+        </div>
+        <!-- <div id= "boss-background"></div> -->
+    </div>
+    <script src="combatSystem.js"></script>
+</body>
+</html>

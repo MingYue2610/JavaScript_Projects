@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>JavaScript Drum Kit</title>
+
+  <link rel="stylesheet" type="text/css" href="drumkit.css" />
+</head>
+
+<body>
+  <div>
+    <h1 id="title">Drumz</h1>
+  </div>
+
+  <div class="container">
+    <button id="toggleButton">Show How To</button>
+    <div id="helpMessage" class="hidden">
+      <p>This is a help message. Click the button to hide this message.</p>
+    </div>
+  </div>
+
+  <div class="board">
+    <div id="keys">
+      <div class="sound-buttons">
+      </div>
+      <div id="clapC" class="inputBoxes">
+        <button data-sound="c">C</button>
+        <p>clap</p>
+      </div>
+      <div id="hiHatH" class="inputBoxes">
+        <button data-sound="h">H</button>
+        <p>hi-hat</p>
+      </div>
+      <div id="kickK" class="inputBoxes">
+        <button data-sound="k">K</button>
+        <p>kick</p>
+      </div>
+      <div id="openHatO" class="inputBoxes">
+        <button data-sound="o">O</button>
+        <p>open-hat</p>
+      </div>
+      <div id="boomB" class="inputBoxes">
+        <button data-sound="b">B</button>
+        <p>boom</p>
+      </div>
+      <div id="rideR" class="inputBoxes">
+        <button data-sound="r">R</button>
+        <p>ride</p>
+      </div>
+      <div id="snareS" class="inputBoxes">
+        <button data-sound="s">S</button>
+        <p>snare</p>
+      </div>
+      <div id="tomT" class="inputBoxes">
+        <button data-sound="t">T</button>
+        <p>tom</p>
+      </div>
+      <div id="tinkI" class="inputBoxes">
+        <button data-sound="i">I</button>
+        <p>tink</p>
+      </div>
+    </div>
+  </div>
+
+
+  <style>
+      /* Optional: Add styles for visual feedback */
+     .hidden {
+      display: none;
+     }
+      .active {
+          background-color: #ddd;
+          transform: scale(0.98);
+      }
+  </style>
+  <script src="./myDrumKit.js"></script>
+</body>
+
+</html>

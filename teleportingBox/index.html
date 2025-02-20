@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch me if you can</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            background-color: #ddd; 
+        }
+
+        #game-container {
+            width: 800px;
+            height: 800px;
+            border: 2px solid #333;
+            background-color: #b421b4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;  
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #clicker {
+            position: absolute;
+            width: 100px;
+            height: 60px;
+            background-color: rgb(179, 195, 38);
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: crosshair;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        #score {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <div id="clicker">Quickly! Click me or miss me!</div>
+        <div id="score">Points: 0</div>
+    </div>
+    <script src="teleportingBox.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Position Tracker</title>
+  <style>
+    /* Styling for position display */
+    #position {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      font-size: 16px;
+      background-color: rgb(111, 199, 234);
+      color: blue;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    /* Styling for click highlight */
+    .highlight {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: green;
+      border-radius: 50%;
+      pointer-events: none; /* Ignore clicks on highlight */
+    }
+  </style>
+<body>
+    <div id="position">X: 0, Y: 0</div>
+    <script src="coordinatesDisplay.js" defer></script>
+</body>
+</head>
+</html>

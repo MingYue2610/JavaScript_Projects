@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Creation</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div>
+        <!-- Music toggle button and audio -->
+        <button id="music-toggle-btn-character">Toggle Music</button>
+        <audio id="background-music" loop>
+            <source src="sounds/Character_Creation_BGM.wav" type="audio/mpeg">
+        </audio>
+    </div>
+    <div id="character-creation">
+        <h1>Character Creation</h1>
+
+        <!-- Character name input -->
+        <label for="character-name">Enter your character's name:</label>
+        <input type="text" id="character-name" placeholder="Name">
+        <div id="name-feedback" style="color: red; font-size: 12px; margin-top: 5px;"></div>
+
+        <!-- Class selection -->
+        <h2>Select your class:</h2>
+        <div class="class-selection">
+            <button id="warrior" class="class-button">Warrior</button>
+            <button id="mage" class="class-button">Mage</button>
+            <button id="rogue" class="class-button">Rogue</button>
+        </div>
+
+        <!-- Class video preview -->
+        <div>
+            <video id="class-video" autoplay muted>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Proceed button -->
+        <button id="to-hidden-objects">Proceed to Hidden Objects</button>
+    </div>
+
+    <!-- Script linking -->
+    <script src="characterCreation.js"></script>
+</body>
+</html>

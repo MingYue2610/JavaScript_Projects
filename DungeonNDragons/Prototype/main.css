@@ -1,0 +1,270 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c2f33;
+    color: #f5f6fa;
+    text-align: center;
+}
+
+header {
+    background-color: #23272a;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #40444b;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #7289da;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.65rem;
+}
+
+button:hover {
+    background-color: #99aab5;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background-color: #23272a;
+    padding: 10px;
+    margin-top: 20px;
+    color: #99aab5;
+}
+
+#music-toggle-btn-character {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; 
+    z-index: 1000; 
+    background-color: #f04747; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    font-weight: bold;
+}
+
+#music-toggle-btn-hidden {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; 
+    z-index: 1000; 
+    background-color: #f04747; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    font-weight: bold;
+}
+
+#music-toggle-btn-combat {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; 
+    z-index: 1000; 
+    background-color: #f04747; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    font-weight: bold;
+}
+
+#music-toggle-btn:hover {
+    background-color: #ff7373;
+}
+
+#character-creation {
+    position: absolute; 
+    background-color: #2c2f33;
+    background-image: url("videos/Town_gathering.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 1rem;
+    height: 100vh; 
+    width: 100vw; 
+    color: #f5f6fa; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#hidden-objects {
+    position: absolute; 
+    background-color: #2c2f33;
+    background-image: url("videos/Entering_the_cave.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    width: 100vw; 
+    color: #f5f6fa; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0px; 
+    padding: 0px; 
+    font-size: 1rem;
+    color: #f5f6fa;
+}
+
+h2 {
+    margin: 0px; 
+    padding: 0px; 
+    font-size: 1rem;
+    color: #f5f6fa;
+}
+
+#character-info {
+    margin: 0px; 
+    padding: 0px; 
+    font-size: 0.65rem;
+    color: #f5f6fa;
+}
+
+/* Roll Dice Container */
+#roll-dice-container {
+    margin-top: 10px;
+    margin: 0px; 
+    padding: 0px; 
+    font-size: 0.65rem;
+}
+
+/* Player and Boss Health Bars */
+#player-health, #boss-health {
+    margin: 0px; 
+    padding: 0px; 
+    font-size: 0.65rem;
+}
+
+/* Combat Log and Abilities */
+#combat-log, #abilities {
+    max-height: 10%;
+    overflow-y: auto;
+    font-size: 0.65rem;
+    border-radius: 10px;
+    margin: 0px; 
+    padding: 0px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#boss-background {
+    position: absolute;
+    background-color: #2c2f33;
+    background-image: url("videos/Boss_Monster.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh; 
+    width: 30vw; 
+    top: 120%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#game-area {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    background-color: #333;
+    border: 2px solid #333;
+}
+
+/* Video Container */
+#video-container {
+    width: 80%; 
+    max-width: 100px; 
+    aspect-ratio: 16 / 9; 
+    background-color: #23272a; 
+    margin: 20px auto; 
+    border: 2px solid #7289da; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 0;
+}
+
+/* Video Styling */
+#class-video {
+    width: 25vw; 
+    height:50vh; 
+    object-fit: cover; 
+    border: transparent; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 0; 
+    display: inline-block; 
+    overflow: hidden; 
+}
+
+/* Styling for click highlight */
+.highlight {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(58, 200, 96);
+    border-radius: 50%;
+    pointer-events: none; 
+    z-index: 1000;
+}
+
+.flash {
+    animation: attackEffect 500ms;
+    color: red;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+@keyframes attackEffect {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
