@@ -4,6 +4,7 @@ Brief snapshot of the JS projects I've worked on
 ## DungeonNDragons
 ```bash
 Browser based DnD theme game that follows the adventure path from character creation to combat arena with multimedia integration
+MongoDB integration therefore needs to link your MongoURI to the server.js file
 ```
 
 ## DrumkitStimulator
